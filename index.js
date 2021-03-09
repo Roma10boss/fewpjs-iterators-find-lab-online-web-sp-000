@@ -5,14 +5,12 @@ function testFunc() {
 }
 
 
-  const record = [
-    {year: "2018", result: "L"},
-    {year: "2017", result: "W"},
-    {year: "2016", result: "N/A"}
-]
-function superbowlWin(){
-  if (superbowlWin.find(result=>result === "W"))
-    return year;
-  else 
-    return undefined;
+ function superbowlWin(array){
+  if(array.find(o => o.result === 'W') === undefined){
+    return undefined
+  }else{
+    return array.find(o => o.result === 'W').year
+
+  }
+
 }
