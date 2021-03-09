@@ -11,8 +11,8 @@ function testFunc() {
   {year: "2016", result: "N/A"}
 ]
 function superbowlWin(){
-if (superbowlWin.find(result=>result === "W"))
-return year;
-else 
-return undefined;
+  if (superbowlWin.find(result=>result === "W"))
+    return year;
+  else 
+    return undefined;
 }
